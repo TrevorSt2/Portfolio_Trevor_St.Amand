@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="work.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+
+    <h3>Trevor St. Amand</h3>
+
+    <nav>
+      <a class="currentPage" href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+
+      <a href="reccomendations.html">Recommendations</a>
+
+      <a href="reflections.html">Reflection</a>
+
+      <a href="certificates.html">Certificates and Awards</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Academic Work⮟</button>
+        <div class="dropdown-content">
+          <a href="academicWork.html">Freshman Academic Work</a>
+          <a href="academicWork.html#sophomoreAcademic">Sophomore Academic Work</a>
+          <a href="academicWork.html#juniorAcademic">Junior Academic Work</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Shop Work⮟</button>
+        <div class="dropdown-content">
+          <a href="shopWork.html">Freshman Shop Work</a>
+          <a href="shopWork.html#sophomoreShopWork">Sophomore Shop Work</a>
+          <a href="shopWork.html#juniorShopWork">Junior Shop Work</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Related Work⮟</button>
+        <div class="dropdown-content">
+          <a href="relatedWork.html">Freshman Related Work</a>
+          <a href="relatedWork.html#sophomoreRelated">Sophomore Related Work</a>
+          <a href="relatedWork.html#juniorRelated">Junior Related Work</a>
+        </div>
+      </div>
+
+          <div class="dropdown">
+        <button class="dropbtn">Common Assessments⮟</button>
+        <div class="dropdown-content">
+          <a href="commonAssessments.html">Freshman DDM</a>
+          <a href="commonAssessments.html#shophomoreDDM">Sophomore DDM</a>
+          <a href="#">Junior DDM</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <hr>
+  <main>
+
+    <div class="workConatiner">
+      <div class="work">
+        <h2>Freshman DDM</h2>
+        <a href=https://ddm.trevorst.repl.co/index.html target="blank">
+          <h3>Tegan and Sara Discography</h3>
+        </a>
+
+        <!-- Change the font or something to make this look better and more interesting -->
+
+        <p>For my DDM, I created a website about the band named “Tegan and Sara”. I started off my website by working on
+          the homepage for the website. I created a header, which contains the logo for the website and links to most of
+          the other pages on my website. This is where I put the required link to their official website. I created the
+          link by using the a tag. I also made a footer that contains the link to the sources page. I added a h1 element
+          to the top of the page, and centered it. This was to tell the user what page they were on. I copy and pasted
+          these things on every page so they would all be consistent with each other, and changed what was in the h1
+          element depending on the page. I then added a p tag to create a paragraph on the page, and wrote a short
+          biography about the band. I also decided the color scheme and applied it to all of the pages. That was
+          everything needed for the home page so I moved onto the band members page. I created an image on the page of a
+          band member by using the img tag, and also created some paragraphs underneath it to add the information needed
+          about the members. I put all of these in a div tag to help format the page and code better. I centerer the
+          pictures and paragraphs, and then repeated the same things for the other members, filling in the different
+          information. This finished up the band members page, so I moved on to the discography page. I did the same
+          thing to add the pictures of the album covers as the pictures on the band members page. I then added an
+          ordered list by using the ol tag, and listed the songs in the album. I centered the ordered list and the
+          pictured so they were next to each other in the middle of the page. I also added an h3 element above them to
+          list the name of the album, and used em to italicize it. Under that I added a h4 element to write the date of
+          the album's release. I repeated these for all of the other albums. For the last part of the project, the
+          sources page, I added a table tag, and organized the links and what I used on the website in the table by
+          using tr and td.
+
+
+        </p>
+      </div>
+
+      <div class="images">
+        <img src="images/oldWebsite.PNG" alt="DDM">
+        <img src="images/oldWebsite2.PNG" alt="DDM">
+      </div>
+    </div>
+
+    <div class="workConatiner">
+      <div class="work">
+        <h2 id="shophomoreDDM">Sophomore DDM</h2>
+      
+          <h3>Clicker Cloud</h3>
+   
+
+        <!-- Change the font or something to make this look better and more interesting -->
+
+        <p>
+          For the computer science principles ap test I had to create an app and explain how it functions. My app allows
+          students using multiple different devices to wirelessly vote on questions that their teacher enters into the
+          app. There is a teacher version of the app, which allows the user to change the questions and reset the vote
+          counter, and there is a student version that only allows the user to view the question and vote on it once.
+        </p>
+
+        <div class="images">
+          <img class="longImage" src="images/SophomoreDDMPic1.jpg" alt="DDM">
+          <img class="longImage" src="images/SophomoreDDMPic2.jpg" alt="DDM">
+        </div>
+
+        <p>
+          This is the code that I created that moves the sliders to display the percentage of agree or disagree votes.
+          When the updateDisplay procedure is called, the if statement is run to make sure that the agreeCount and the
+          disagreeCount added together isn’t 0. If the if statement passes, an equation is run that determines what
+          percentage of votes are agree/disagree, and then the sliders are set accordingly. If the if statement fails
+          because the votes added together is 0, then the sliders are reset back to 0 and global answered is set to
+          false.
+        </p>
+        <div class="images">
+          <img class="wideImage" src="images/SophomoreDDMPic3.jpg" alt="DDM">
+        </div>
+
+        <p class="sophomoreDDM">
+          This code inhibits the user of the app from voting more than once. When the user votes by clicking on either
+          ButtonDisagree or ButtonAgree, there is an if statement that runs to check if the global variable answered is
+          set to false. If the statement passes, then the vote is counted and global answered is set to true. If the
+          statement fails, then a notifier is run, telling the user that they have already voted. The votes are reset by
+          the updateDisplay procedure. When the reset button is clicked it sets the vote counts back to 0. This causes
+          the if statement in the updateDisplay procedure to fail, which then sets global answered to false, allowing
+          the user to vote again.
+        </p>
+        <div class="images">
+          <img class="mediumImage" src="images/SophomoreDDMPic4.jpg" alt="DDM">
+          <img class="mediumImage" src="images/SophomoreDDMPic5.jpg" alt="DDM">
+        </div>
+        <p class="sophomoreDDM">
+          In the teacher version of the app the user is allowed to change the questions and reset the votes. To change
+          the question, the user types the question into the text box at the top of the screen and then hits
+          buttonChangeTxt, which calls the procedure storeDBvalues. This stores the question they typed into the cloud
+          database, where it is then extracted by the student version and displayed on their screen. The reset button
+          simply sets the vote count back to 0 and stores the changed values, which in turn allows the users to vote
+          again.
+        </p>
+        <div class="images">
+          <img class="mediumImage" src="images/SophomoreDDMPic6.jpg" alt="DDM">
+          <img class="mediumImage" src="images/SophomoreDDMPic7.jpg" alt="DDM">
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="workConatiner">
+      <div class="work">
+        <h2 id="juniorDDM">Junior DDM</h2>
+        <a href="CrossWordFX_TS.zip" target="blank" download="CrossWordFX_TS.zip">
+          <h3>Java Crossword</h3>
+        </a>
+
+        <!-- Change the font or something to make this look better and more interesting -->
+
+        <p>
+          My Junior year DDM was to program a crossword puzzle in Java. The program would have to take in information about the puzzle from a text file using a scanner, then separate the data and create clue objects with it. The clue objects would be used to create the crossword board, display clues to the user, and check if the user entered the correct word in the right spot. The program also has lots of input validation; if the user enters a string when they should enter a number, the program doesn’t crash, but tells the user that they entered an invalid input. The program makes sure that the user doesn’t enter a word that is too long, doesn’t match with existing letters on the board, or contains numbers.
+        </p>
+
+        <p class = "sophomoreDDM">
+          File handling is an extremely important part of computer programming, and is something that I was taught the basics of this year. I am easily able to read data from a text file and use it in my programs. In my DDM, there is a fileUtils class, which handles everything that has to do with reading the files. The method readFile(File file) takes in a file object and then iterates through it using a scanner and a while loop. The while loop condition is hasNext(), which checks the file to make sure that it has another line to read. The scanner reads the file, then splits it and creates a clue object to hold all of the data from the line. The clue object is added to a list, and when the while loop breaks, the array of clues is returned. If the readFile() has a try catch block, so if it fails to read the file, then it asks the user to enter the name of the file and then calls the method again with the new file, preventing the program from crashing.
+        </p>
+
+        <p class="sophomoreDDM">
+          The main part of the program is the Crossword class. The constructor for this class has no parameters, but when an object is made the readFile() method is called and the list of clues is saved in the class. Still in the constructor, the createCrossword method is called, which uses the clue list to create the board. The board can be any size, as it looks through the text file and changes the size of the board accordingly. The method first changes the squares to contain the number of the word and a ‘.’, which represents a white space. Then it changes all of the null squares to ‘*’, which represents a black space.
+        </p>
+        
+        <div class="images">
+          <img class="largeImage" src="images/juniorDDm.png" alt="DDM">
+          
+          <video width="320" height="240" controls>
+            <source src="images/crossword.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+  <hr>
+
+  <footer>
+    <h3>Trevor St. Amand</h3>
+
+    <h4>Old Colony RVTHS Computer Science --- 2020 - 2024</h4>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
