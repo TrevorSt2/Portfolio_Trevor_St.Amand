@@ -213,6 +213,39 @@
 
     </div>
 
+    <div class="workConatiner">
+      <div class="work">
+        <h2 id="juniorDDM">Senior DDM</h2>
+        <a href="CrossWordFX_TS.zip" target="blank" download="CrossWordFX_TS.zip">
+          <h3>Java Crossword</h3>
+        </a>
+
+        <!-- Change the font or something to make this look better and more interesting -->
+
+        <p>
+          My senior year DDM was to recreate the board game Monopoly using java, javaFX, and SQL databases. When the user runs the program I created, they are brought to a main menu screen where they can start a new game or load a game that is in progress. If they choose to start a new game, then they must enter the password for the game and the number of players. If they choose to load a game, then they must enter the password that corresponds to the game that they wish to load. When the game starts all of the properties and their information is loaded from the database and all of the players are initialized. If the game is being loaded all information about the game will be loaded from the database. After this the game plays like classic monopoly, including chance and community chest cards, taxes, and monopolies.
+
+        </p>
+
+        <p class = "sophomoreDDM">
+          File handling is an extremely important part of computer programming, and is something that I was taught the basics of this year. I am easily able to read data from a text file and use it in my programs. In my DDM, there is a fileUtils class, which handles everything that has to do with reading the files. The method readFile(File file) takes in a file object and then iterates through it using a scanner and a while loop. The while loop condition is hasNext(), which checks the file to make sure that it has another line to read. The scanner reads the file, then splits it and creates a clue object to hold all of the data from the line. The clue object is added to a list, and when the while loop breaks, the array of clues is returned. If the readFile() has a try catch block, so if it fails to read the file, then it asks the user to enter the name of the file and then calls the method again with the new file, preventing the program from crashing.
+        </p>
+
+        <p class="sophomoreDDM">
+          Most of the project went by quickly, but I hit a bit of a roadblock when it came to saving the game. One of the major functions of the game was to be able to save the game and continue it at any time, but I had never done this before. I decided that the best way to go about it was to plan out all of the code beforehand, as to make the work easier. Using my trello board and pseudo code, I was able to plan out how I was going to save the players information such as properties, money, and position to the database when they quit the game. I also planned out how I would load the information back into the program and initialize all of the player objects with the correct information. As a result of this careful planning, I was able to quickly implement the save/load game feature into the game within one day, with time to spend on other important tasks such as improving the UI.
+
+
+        </p>
+
+        <div class="images">
+          <img class="largeImage" src="sfdnsd.png" alt="DDM">
+
+        </div>
+      </div>
+
+
+    </div>
+
   </main>
   <hr>
 
